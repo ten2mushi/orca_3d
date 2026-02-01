@@ -116,17 +116,17 @@ print(f"Agent 2 reached: {trajectories[1][-1]}")
 
 ### Parameter Guidelines
 
-**Conservative (Safety Priority)**
+**conservative**
 ```python
 R=1.0, tau=8.0, max_speed=1.0
 ```
 
-**Aggressive (Performance Priority)**
+**more aggressive**
 ```python
 R=0.3, tau=2.0, max_speed=3.0
 ```
 
-**Balanced (Recommended)**
+**balanced**
 ```python
 R=0.5, tau=5.0, max_speed=1.5
 ```
@@ -153,7 +153,7 @@ obstacle = {
 
 ## Algorithm Details
 
-### ORCA (Tactical Layer)
+### ORCA == tactical layer
 
 For each pair of agents, ORCA:
 
@@ -173,7 +173,7 @@ For each pair of agents, ORCA:
    v_new = argmin_{v ∈ ORCA_i ∩ B(0, v_max)} ||v - v_pref||
    ```
 
-### A* Path Planning (Strategic Layer)
+### A* Path Planning == strategic layer
 
 1. **Visibility Graph**: Constructs graph from obstacle vertices
 2. **Euclidean Heuristic**: Admissible heuristic guarantees optimal paths
@@ -201,8 +201,6 @@ python -m pytest tests/ --cov=src
 ## Examples
 
 ### Multi-Agent Swarm
-
-![Circular Exchange Demo](circular_exchange_test.gif)
 
 ```python
 import numpy as np
