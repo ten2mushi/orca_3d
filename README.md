@@ -8,7 +8,7 @@ hybrid collision avoidance and path planning library for autonomous agents in 3D
 ORCA-A* 3D combines two complementary algorithms for multi-agent navigation Optimal Reciprocal Collision Avoidance and A Star.
 
 This implementation extends the original 2D ORCA algorithm to 3D space.
-See paper for details: [ORCA-A* 3D](https://www.sesarju.eu/sites/default/files/documents/sid/2024/papers/SIDs_2024_paper_059%20final.pdf)
+See paper for details: [ORCA-A*](https://www.sesarju.eu/sites/default/files/documents/sid/2024/papers/SIDs_2024_paper_059%20final.pdf)
 
 
 ## features
